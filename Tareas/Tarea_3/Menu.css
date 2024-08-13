@@ -1,0 +1,55 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor del menú */
+.menu {
+    background-color: #343a40;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista de botones */
+.botones {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos de los enlaces */
+.botones li {
+    margin-bottom: 15px;
+}
+
+.botones li:last-child {
+    margin-bottom: 0;
+}
+
+.botones a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover en los enlaces */
+.botones a:hover {
+    background-color: #0056b3;
+}
