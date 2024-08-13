@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,7 +17,7 @@ body {
     min-height: 100vh;
 }
 
-/* Contenedor principal */
+
 .container {
     background-color: #fff;
     padding: 20px;
@@ -27,7 +27,7 @@ body {
     width: 100%;
 }
 
-/* Encabezado */
+
 h1 {
     text-align: center;
     color: #333;
@@ -35,7 +35,7 @@ h1 {
     font-size: 24px;
 }
 
-/* Estilos de grupo de formulario */
+
 .form-group {
     margin-bottom: 15px;
 }
@@ -72,7 +72,7 @@ input[type="text"]:focus, input[type="date"]:focus {
     margin-right: 5px;
 }
 
-/* Estilo de botones (si se añaden en el futuro) */
+
 button {
     width: 100%;
     padding: 10px;
@@ -87,4 +87,16 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+a img {
+    max-width: 20%; 
+    height: auto; 
+    display: block; 
+    margin:auto;
+}
+
+a {
+    display: inline-block; 
+    background-color:none; 
+    padding: 0; 
 }

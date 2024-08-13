@@ -6,6 +6,7 @@
 }
 
 body {
+    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
     display: flex;
@@ -14,25 +15,51 @@ body {
     height: 100vh;
 }
 
-/* Contenedor del menú */
-.menu {
-    background-color: #343a40;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+.container {
+    border: 1px solid #000; 
+    display: grid;
+    grid-template-rows: 200px 400px;
+    grid-template-columns: 200px 600px;
+    width: 800px;
+    height: 600px;
+    border: 1px solid black;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    h1{
+        color: white;
+    }
 }
 
-/* Lista de botones */
+
+.logo {
+    border: 1px solid #000; 
+    grid-column: 1 / 3;
+    background-color: #d3d3d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #383aaf;
+    text-align: center;
+}
+
+
+.menu {
+    border: 1px solid #000; 
+    background-color: #343a40;
+    padding: 20px;
+}
+
 .botones {
     list-style: none;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; 
 }
 
-/* Estilos de los enlaces */
 .botones li {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .botones li:last-child {
@@ -49,7 +76,25 @@ body {
     transition: background-color 0.3s ease;
 }
 
-/* Hover en los enlaces */
 .botones a:hover {
     background-color: #0056b3;
+}
+
+.contenido {
+    border: 1px solid #000; 
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    img {
+        border: 2px solid #000; 
+        border-radius: 20px;
+        max-width: 50%; 
+        height: auto; 
+        display: block; 
+        margin:auto;
+    }
 }

@@ -78,3 +78,15 @@ select:focus {
     margin-right: 20px;
     font-weight: normal;
 }
+a img {
+    max-width: 20%; 
+    height: auto; 
+    display: block; 
+    margin:auto;
+}
+
+a {
+    display: inline-block; 
+    background-color:none; 
+    padding: 0; 
+}

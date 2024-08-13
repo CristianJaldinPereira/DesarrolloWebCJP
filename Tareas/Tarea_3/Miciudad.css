@@ -82,3 +82,15 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+a img {
+    max-width: 20%; 
+    height: auto; 
+    display: block; 
+    margin:auto;
+}
+
+a {
+    display: inline-block; 
+    background-color:none; 
+    padding: 0; 
+}
