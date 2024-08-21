@@ -1,8 +1,5 @@
 <?php
-// Definir el arreglo con los 5 números
 $numeros = [23, 45, 12, 78, 34];
-
-// Encontrar el número mayor y menor
 $mayor = max($numeros);
 $menor = min($numeros);
 ?>

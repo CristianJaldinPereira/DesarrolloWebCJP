@@ -24,13 +24,13 @@
 <body>
     <table border="1">
         <?php
-        $filas = 8; // Número de filas
-        $columnas = 8; // Número de columnas
+        $filas = 8; 
+        $columnas = 8; 
 
         for ($i = 0; $i < $filas; $i++) {
             echo "<tr>";
             for ($j = 0; $j < $columnas; $j++) {
-                // Determinar si la celda es negra o blanca
+               
                 if (($i + $j) % 2 == 0) {
                     echo '<td class="negro"></td>';
                 } else {
