@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario para generar tabla</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        font-size: 16px;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    input[type="submit"] {
+        background-color: #fd0000;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #fd0000;
+    }
+
+    input[type="submit"]:active {
+        background-color: #fd0000;
+    }
+</style>
+<body>
+    <form action="tabla.php" method="post">
+        <label for="filas">Numero de filas:</label>
+        <input type="number" id="filas" name="filas" required>
+        <br>
+        <label for="columnas">Numero de columnas:</label>
+        <input type="number" id="columnas" name="columnas" required>
+        <br>
+        <input type="submit" value="Generar Tabla">
+    </form>
+</body>
+</html>

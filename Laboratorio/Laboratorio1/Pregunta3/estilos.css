@@ -1,0 +1,87 @@
+.contenedor{
+    width: 100%;
+}
+
+.cabeza{
+    background-color: salmon;
+    color:white;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 15px;
+}
+
+.enlaces{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(19, 152, 108);
+}
+
+.enlaces a{
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
+.lado-izquierda{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    width: 50%; 
+    padding: 10px;
+}
+.lado-derecha{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+   padding: 10px;
+}
+.idiomas{
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: row;
+}
+
+.El-señor{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    background-color: rgba(24, 22, 22, 0.145);
+}
+
+.aside h1{
+    padding: 10px;
+}
+
+.cuadro{
+    width: 90% 400px;
+    height: 400px;
+    margin: 15px;
+    background-color: rgba(58, 58, 58, 0.334);
+}
+
+.subtitulo{
+    width: 95%;
+}
+.subtitulo h1{
+
+     padding-left: 15px;
+}
+.subtitulo h3{
+    padding-left: 15px;
+}
+
+.rectangulo{ 
+    background-color: rgba(58, 58, 58, 0.334);
+    width: 90% ;
+    height: 200px;
+    margin: auto;
+}
+
+p {
+    margin: 20px;
+}
