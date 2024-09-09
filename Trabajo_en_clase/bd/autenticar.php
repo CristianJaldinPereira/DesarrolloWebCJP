@@ -6,7 +6,7 @@ $sql = "SELECT email, password FROM usuario WHERE email='$email' AND password='$
 $resultado = $con->query($sql);
 if ($resultado){
     if ($fila = $resultado->fetch_assoc()){
-        echo "Correcto";
+        header("Location:read.php")    ;
     }
     else{
         echo "Incorrecto";
