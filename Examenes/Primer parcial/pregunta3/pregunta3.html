@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntar a y b </title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        form {
+            margin: 20px;
+        }
+        .botones input{
+            border: 3px solid rgb(0, 153, 255);
+            width: 50px;
+            height: 30px;
+        }
+        .menu input{
+            border: 4px solid rgb(38, 72, 111);
+            background-color: rgb(106, 218, 218);
+            color: white;
+            margin-top: 10px;
+            width: 100px;
+            height: 50px;
+        }
+        form{
+            border: 2px solid black;
+            width: 120px;
+            height:180px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ingrese los valores de a y b</h1>
+    <form action="menu.php" method="POST">
+        <div class="botones">
+            <label for="a">a:</label>
+            <input type="number" name="a" required>
+            <br>
+            <label for="b">b:</label>
+            <input type="number" name="b" required>
+            <br>
+        </div>
+        
+        <div class="menu">
+            <input type="submit" value="Menu">
+        </div>
+       
+    </form>
+</body>
+</html>

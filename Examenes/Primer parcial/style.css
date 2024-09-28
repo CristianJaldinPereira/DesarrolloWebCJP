@@ -1,0 +1,142 @@
+.contenedor {
+    border: 2px solid black;
+    width: 900px; 
+    margin: 0 auto; 
+}
+
+.cabecera {
+    background-color: #FABF8F;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.cabecera img 
+{
+    width: 100px;
+    height: 100px;
+}
+
+
+.text1 {
+    color: #C60000;
+}
+
+.text2 {
+    color: #0070C0;
+}
+
+.textos {
+    text-align: center;
+}
+
+.carreras {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.carrera1 {
+    border: 1px solid black;
+    background-color: #D9D9D9;
+    width: 450px;
+    justify-content: center;
+}
+
+.carrera2 {
+    border: 1px solid black;
+    background-color: #92D050;
+    padding-right: 20px;
+    width: 450px;
+}
+
+.preguntas {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(71, 67, 67);
+    border: 1px solid black;
+    color: #FFC000;
+}
+
+.direcciones {
+    display: flex;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.button {
+    border: none;
+    background-color: #FFC000;
+    font-display: none;
+}
+
+.recursos {
+    display: flex;
+    flex-direction: row;
+}
+
+.cuadro {
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.contenido {
+    background-color: #D9D9D9 ;
+    display: flex;
+    justify-content: space-between;
+    width: 780px;
+    border: 1px solid black;
+}
+.nombre
+{
+    display: flex;
+    border: 1px solid black;
+    justify-content: right;
+}
+
+
+.contenido img
+{
+    width: 400px;
+        height: auto;
+}
+
+video
+{
+    margin-left: 50px;
+    width: 250px;
+        height: auto;
+        
+}
+a
+{
+    background-color: yellow ;
+    border: 3px solid #C60000 ;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.text1 h1{
+    font-size: 20px;
+}
+.text2 h1
+{
+    font-size: 15px;
+}
+.carrera1 h1,h2
+{
+font-size: 20px;
+}
+.nombre h1
+{
+    font-size: 15px;
+}
+.preguntas h1 {
+    margin-left: 10px;
+    font-size: 20px;
+}
