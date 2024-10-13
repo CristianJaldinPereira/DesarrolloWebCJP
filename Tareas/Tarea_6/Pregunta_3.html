@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Función que determina si una cadena es un palíndromo
+function esPalindromo(cadena) {
+    // Convertir la cadena a minúsculas y eliminar espacios y acentos
+    let cadenaLimpia = cadena
+        .toLowerCase()
+        .replace(/[\sáéíóúü]/g, '') // Eliminar espacios y acentos
+        .normalize('NFD')            // Normalizar caracteres
+        .replace(/[\u0300-\u036f]/g, ''); // Eliminar diacríticos (acentos)
+
+    // Invertir la cadena
+    let cadenaInvertida = cadenaLimpia.split('').reverse().join('');
+
+    // Comparar la cadena original limpia con la invertida
+    return cadenaLimpia === cadenaInvertida;
+}
+
+// Ejemplo de uso:
+const texto = "La ruta nos aporto otro paso natural";
+const resultado = esPalindromo(texto);
+alert(resultado ? "Es un palíndromo" : "No es un palíndromo");
+
+    </script>
+</body>
+</html>
