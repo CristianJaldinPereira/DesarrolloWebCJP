@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Alumnos</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        input[type="submit"], input[type="reset"] {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="Fdatos4.php" method="POST" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <th>Fotografía</th>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>CU</th>
+                <th>Sexo</th>
+                <th>Carrera</th>
+            </tr>
+
+            <tr>
+                <td><input type="file" name="foto1" required></td>
+                <td><input type="text" name="nombres1" required></td>
+                <td><input type="text" name="apellidos1" required></td>
+                <td><input type="text" name="cu1" required></td>
+                <td>
+                    <input type="radio" name="sexo1" value="M" required> Masculino
+                    <input type="radio" name="sexo1" value="F" required> Femenino
+                </td>
+                <td>
+                    <select name="codigocarrera1" required>
+                        <option value="Ing. Sistemas">Ing. Sistemas</option>
+                        <option value="Ing. en Telecomunicaciones">Ing. en Telecomunicaciones</option>
+                        <option value="Ing. Del Gas y Petróleo">Ing. Del Gas y Petróleo</option>
+                        <option value="Ing. eléctrica">Ing. eléctrica</option>
+                    </select>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td><input type="file" name="foto2" required></td>
+                <td><input type="text" name="nombres2" required></td>
+                <td><input type="text" name="apellidos2" required></td>
+                <td><input type="text" name="cu2" required></td>
+                <td>
+                    <input type="radio" name="sexo2" value="M" required> Masculino
+                    <input type="radio" name="sexo2" value="F" required> Femenino
+                </td>
+                <td>
+                    <select name="codigocarrera2" required>
+                        <option value="Ing. Sistemas">Ing. Sistemas</option>
+                        <option value="Ing. en Telecomunicaciones">Ing. en Telecomunicaciones</option>
+                        <option value="Ing. Del Gas y Petróleo">Ing. Del Gas y Petróleo</option>
+                        <option value="Ing. eléctrica">Ing. eléctrica</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="file" name="foto3" required></td>
+                <td><input type="text" name="nombres3" required></td>
+                <td><input type="text" name="apellidos3" required></td>
+                <td><input type="text" name="cu3" required></td>
+                <td>
+                    <input type="radio" name="sexo3" value="M" required> Masculino
+                    <input type="radio" name="sexo3" value="F" required> Femenino
+                </td>
+                <td>
+                    <select name="codigocarrera3" required>
+                        <option value="Ing. Sistemas">Ing. Sistemas</option>
+                        <option value="Ing. en Telecomunicaciones">Ing. en Telecomunicaciones</option>
+                        <option value="Ing. Del Gas y Petróleo">Ing. Del Gas y Petróleo</option>
+                        <option value="Ing. eléctrica">Ing. eléctrica</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="file" name="foto4" required></td>
+                <td><input type="text" name="nombres4" required></td>
+                <td><input type="text" name="apellidos4" required></td>
+                <td><input type="text" name="cu4" required></td>
+                <td>
+                    <input type="radio" name="sexo4" value="M" required> Masculino
+                    <input type="radio" name="sexo4" value="F" required> Femenino
+                </td>
+                <td>
+                    <select name="codigocarrera4" required>
+                        <option value="Ing. Sistemas">Ing. Sistemas</option>
+                        <option value="Ing. en Telecomunicaciones">Ing. en Telecomunicaciones</option>
+                        <option value="Ing. Del Gas y Petróleo">Ing. Del Gas y Petróleo</option>
+                        <option value="Ing. eléctrica">Ing. eléctrica</option>
+                    </select>
+                </td>
+            </tr>
+
+        </table>
+        
+        <br>
+        <input type="submit" value="Insertar">
+        <input type="reset" value="Borrar">
+    </form>
+
+</body>
+</html>
