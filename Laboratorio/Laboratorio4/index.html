@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cliente de Correo Web</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="tabs">
+        <button id="inboxTab">Bandeja de Entrada</button>
+        <button id="composeTab">Redactar</button>
+        <button id="sentTab">Bandeja de Salida</button>
+    </div>
+
+    <div id="content">
+
+    </div>
+
+    <div id="modal" style="display:none;">
+        <span id="closeModal">&times;</span>
+        <div id="modalContent"></div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            loadInbox();
+
+            $('#inboxTab').click(loadInbox);
+            $('#composeTab').click(loadCompose);
+            $('#sentTab').click(loadSent);
+
+            $(document).on('click', '.viewEmail', function() {
+                const emailId = $(this).data('id');
+                viewEmail(emailId);
+            });
+
+            $('#closeModal').click(function() {
+                $('#modal').hide();
+            });
+        });
+
+        function loadInbox() {
+            $.get('recibido.php', function(data) {
+                $('#content').html(data);
+            });
+        }
+
+        function loadCompose() {
+            $('#content').html(`
+                <form id="composeForm">
+                    <input type="email" name="to" placeholder="Para" required>
+                    <input type="text" name="subject" placeholder="Asunto" required>
+                    <textarea name="message" placeholder="Mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            `);
+            $('#composeForm').submit(function(e) {
+                e.preventDefault();
+                $.post('guardar.php', $(this).serialize(), function(response) {
+                    alert(response);
+                    loadInbox();
+                });
+            });
+        }
+
+        function loadSent() {
+            $.get('salida.php', function(data) {
+                $('#content').html(data);
+            });
+        }
+
+        function viewEmail(emailId) {
+            $.get('ver_mensaje.php?id=' + emailId, function(data) {
+                $('#modalContent').html(data);
+                $('#modal').show();
+            });
+        }
+    </script>
+</body>
+</html>

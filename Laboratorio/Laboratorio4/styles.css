@@ -1,0 +1,122 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 20px;
+}
+
+.tabs button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4682B4;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 3px;
+    text-align: left;
+    width: 150px;
+}
+
+#inboxTab {
+    border: 2px solid #87CEFA;
+    background-color: #87CEFA;
+}
+
+#sentTab {
+    border: 2px solid #FFA07A;
+    background-color: #FFA07A;
+}
+
+.tabs button:hover {
+    background-color: #4682B4;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+th {
+    background-color: #4682B4;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+td:nth-child(1), td:nth-child(2), td:nth-child(3) {
+    width: 25%;
+}
+
+td:nth-child(4) {
+    text-align: center;
+    width: 15%;
+}
+
+button.viewEmail {
+    padding: 5px 15px;
+    border: none;
+    background-color: #4682B4;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+button.viewEmail:hover {
+    background-color: #5A9BD5;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modalContent {
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+#closeModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+

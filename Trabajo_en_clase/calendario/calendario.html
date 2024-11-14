@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario Dinámico</title>
+    <style>
+        body {
+            font-family: Tahoma, Verdana;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        #menu {
+            width: 200px;
+            background-color: #b94a32;
+            padding: 20px;
+            color: white;
+        }
+        #contenido {
+            margin-left: 220px;
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #f28e75;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        th, td {
+            font-family: Tahoma, Verdana;
+            font-size: 10px;
+            color: #666666;
+            text-align: center;
+        }
+        td {
+            color: #999999;
+        }
+        .current {
+            font-family: Tahoma, Verdana;
+            font-size: 10px;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <label for="mes">Mes</label><br>
+        <select id="mes" name="mes">
+            <option value="1">Enero</option>
+            <option value="2">Febrero</option>
+            <option value="3">Marzo</option>
+            <option value="4">Abril</option>
+            <option value="5">Mayo</option>
+            <option value="6">Junio</option>
+            <option value="7">Julio</option>
+            <option value="8">Agosto</option>
+            <option value="9">Septiembre</option>
+            <option value="10">Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Diciembre</option>
+        </select><br><br>
+
+        <label for="anio">Año</label><br>
+        <input type="number" id="anio" name="anio" value="<?php echo date('Y'); ?>" min="1975" max="2024"><br><br>
+
+        <button onclick="actualizarCalendario()">Mostrar Calendario</button>
+    </div>
+
+    <div id="contenido">
+        <h2>Calendario</h2>
+        <div id="calendario">
+            <!-- Aquí se cargará el calendario -->
+        </div>
+    </div>
+
+    <footer>Sucre - Semestre 1-2024</footer>
+
+    <script>
+        // Función para actualizar el calendario sin recargar la página
+        function actualizarCalendario() {
+            const mes = document.getElementById('mes').value;
+            const anio = document.getElementById('anio').value;
+
+            // Usar fetch para obtener el calendario desde el archivo PHP
+            fetch(`calendario.php?mes=${mes}&anio=${anio}`)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('calendario').innerHTML = data;
+                })
+                .catch(error => {
+                    console.error('Error al cargar el calendario:', error);
+                });
+        }
+
+        // Cargar el calendario por defecto al inicio
+        document.addEventListener("DOMContentLoaded", function() {
+            actualizarCalendario();
+        });
+    </script>
+</body>
+</html>
