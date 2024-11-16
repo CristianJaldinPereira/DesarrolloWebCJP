@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-operations">
+        <div class="tabla" id="tabla">
+            <div>
+                <label for="numero">Tabla del:</label>
+                <input type="number" id="numero">
+            </div>
+            <div class="operaciones">
+                <label>
+                    Suma<input type="radio" name="opcion" id="opcion"  value=1 required> 
+                </label>
+                <label>
+                    Resta<input type="radio" name="opcion" id="opcion" value=2 required>
+                </label>
+                
+            </div>
+            <div class="operaciones">
+                <label>
+                    Multiplicacion<input type="radio" name="opcion" id="opcion" value=3 required>
+                </label>
+                <label>
+                    Division<input type="radio" name="opcion" id="opcion" value=4 required>
+                </label>
+            </div>
+            
+            <div>
+                <label for="hasta">Hasta el:</label>
+                <input type="number" name="hasta" id="hasta">
+            </div>
+            <input type="button" value="Calcular" onclick="calcularTabla()">
+
+        </div>
+        <br>
+
+        <div class="resultado" id="resultado">
+            El resultado se mostrara aqui
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
