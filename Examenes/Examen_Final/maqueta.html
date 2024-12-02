@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maqueta Examen</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 sidebar d-flex flex-column align-items-center py-3">
+                <img src="imagenes/escudo.jpg" alt="Logo" class="mb-3 rounded-circle">
+                <ul class="nav flex-column text-center">
+                    <li class="nav-item"><a class="nav-link" href="maqueta.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pregunta 2</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="listar()">Pregunta 3</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ecuacion.html">Pregunta 4</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pregunta 5</a></li>
+                </ul>
+            </div>
+            <div class="col-9">
+                <nav class="navbar navbar-light bg-light px-3">
+                 
+                    <a class="nav-link" href="#">Pregunta 2</a>
+                    <a class="nav-link" onclick="listar()">Pregunta 3</a>
+                    <a class="nav-link" href="ecuacion.html">Pregunta 4</a>
+                    <a class="nav-link" href="#">Pregunta 5</a>
+                    <button  type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal" onclick="modal()">Iniciar Sesión</button>
+                </nav>
+                <div class="main-content" id="principal">
+                    <span class="navbar-brand mb-0 h1">SIS 256 Programación Web</span>
+                    <h1 style="font-size: 1.5rem;">Examen Final</h1>
+                    <img src="imagenes/perfil.jpg" alt="Tu foto" class="rounded-circle my-2">
+                    <h3 style="font-size: 1rem;">Cristian Jaldin Pereira</h3>
+                    <p style="font-size: 0.9rem;">Ingenieria en Ciencias de la Computacion</p>
+               <h1 style="font-size: 1rem">repositorio</h1>
+                    <a href="https://github.com/CristianJaldinPereira/DesarrolloWebCJP" target="_blank"
+                        class="btn btn-primary btn-sm">Haga click aquí</a>
+                    <h2 class="mt-3" style="font-size: 1.2rem;">Nuestros Servicios</h2>
+                    <div class="row mt-2">
+                        <div class="col-4">
+                            <div class="card text-center">
+                                <div class="card-body bg-primary text-white">
+                                    <h5>Consultoría</h5>
+                                </div>
+                                <div class="card-footer">
+                                    <p>Asesoramiento personalizado.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4" id="contenido">
+                            <div class="card text-center">
+                                <div class="card-body bg-success text-white">
+                                    <h5>Desarrollo Web</h5>
+                                </div>
+                                <div class="card-footer">
+                                    <p>Sitios modernos y funcionales.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card text-center">
+                                <div class="card-body bg-danger text-white">
+                                    <h5>Soporte Técnico</h5>
+                                </div>
+                                <div class="card-footer">
+                                    <p>Asistencia 24/7 garantizada.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer d-flex justify-content-between align-items-center px-3">
+            <span>© Examen Final Tecnología y DesarrolloWeb</span>
+            <div>
+                <a href="#" class="text-white mx-2">Facebook</a>
+                <a href="#" class="text-white mx-2">Twitter</a>
+                <a href="#" class="text-white mx-2">LinkedIn</a>
+            </div>
+        </footer>
+    </div>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" id="modal-content">
+            
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+<script src="./javascript.js"></script>
+<script src="calculadora.js"></script>
+
+</html>
